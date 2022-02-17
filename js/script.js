@@ -6,11 +6,22 @@ document.getElementById("calculate-btn").addEventListener('click', function () {
     let cloth = parseFloat(document.getElementById('cloth').value);
     let totalExpenses = food + rent + cloth;
 
-    console.log(totalExpenses);
+
     let balance = income - totalExpenses
 
     document.getElementById("total-expences").innerText = totalExpenses;
     document.getElementById("balance").innerText = balance;
 
+})
+
+// save part 
+document.getElementById("save").addEventListener('click', function () {
+    let discount = parseFloat(document.getElementById('discount').value);
+    discount = discount / 100;
+    // saving account 
+    let income = parseFloat(document.getElementById('income').value);
+    let savingAccount = income * discount;
+    document.getElementById("saving-account").innerText = savingAccount;
+    console.log(savingAccount);
 
 })
