@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.second-part{
+    background: #F8F8F8;
+}
+.input-part{
+    background: #DCDCDC;
+    border-radius: 2px;
+    border: none;
+}
+.percentage-input-part{
+    width:30%;
+}
+.my-btn{
+    background-color: #59A5FF;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: 500px;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
