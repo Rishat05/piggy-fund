@@ -1,3 +1,4 @@
+/* font roboto  */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body{
@@ -11,9 +12,11 @@ body{
     border-radius: 2px;
     border: none;
 }
+/* discount input part */
 .percentage-input-part{
     width:30%;
 }
+/* common button  */
 .my-btn{
     background-color: #59A5FF;
     color: white;

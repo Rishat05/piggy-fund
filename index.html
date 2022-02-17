@@ -14,7 +14,7 @@
 
 <body class="container">
 
-    <header class="text-center m-3 fs-1 fw-bold">Checker World</header>
+    <header class="text-center m-3 fs-1 fw-bold">Piggy Fund</header>
     <main>
         <div class="row">
 
@@ -41,6 +41,7 @@
                                 <input id="income" type="text" class="input-part p-2 w-100">
                             </div>
                         </div>
+                        <p id="error-income" class="text-danger"></p>
                         <!-- expense part  -->
                         <p class="mt-2 fs-4 fw-bold mb-2">Expenses</p>
                         <div class="row mt-2 mb-3">
@@ -67,21 +68,27 @@
                                 <input id="cloth" type="text" class="input-part p-2 w-100">
                             </div>
                         </div>
+                        <p id="error-expenses-negative" class="text-danger"></p>
+                        <p id="error-expenses-string" class="text-danger"></p>
+
                         <button id="calculate-btn" class="my-btn mb-3">Calculate</button>
                         <!-- expenses end  -->
 
                         <p class="mt-2 fs-4 fw-bold mb-2">Total Expenses: <span id="total-expences">0</span> </p>
+                        <p id="error-more-expenses" class="text-danger"></p>
                         <p class="mt-2 fs-4 fw-bold mb-3">Balance: <span id="balance">0</span></p>
                         <!-- save percentage part  -->
 
-                        <div class="d-flex border justify-content-evenly align-items-center container mb-3"
+                        <div class="d-flex justify-content-evenly align-items-center container mb-3"
                             style="height: 40px;">
                             <span class="fw-bold">Save: </span>
                             <input id="discount" type="text" class="input-part percentage-input-part h-100">
                             <span style="font-size:18px;font-weight: bold;">%</span>
                             <button id="save" class="my-btn">Save</button>
                         </div>
-                        <p class="mt-2 fs-4 fw-bold mb-2">Saving Amount: <span id="saving-account">0</span> </p>
+                        <p id="error-discount-negative" class="text-danger"></p>
+                        <p class="mt-2 fs-4 fw-bold mb-2">Saving Amount: <span id="saving-amount">0</span> </p>
+                        <p id="error-saving-amount" class="text-danger"></p>
                         <p class="mt-2 fs-4 fw-bold mb-2">Remaining Balance: <span id="remaing-balance">0</span></p>
 
                     </div>
