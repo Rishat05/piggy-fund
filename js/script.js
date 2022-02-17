@@ -22,6 +22,11 @@ document.getElementById("save").addEventListener('click', function () {
     let income = parseFloat(document.getElementById('income').value);
     let savingAccount = income * discount;
     document.getElementById("saving-account").innerText = savingAccount;
-    console.log(savingAccount);
+
+    // remaining balance 
+    let balance = parseFloat(document.getElementById("balance").innerText);
+    let remaingBalance = balance - savingAccount;
+    document.getElementById("remaing-balance").innerText = remaingBalance;
+    console.log(remaingBalance)
 
 })
