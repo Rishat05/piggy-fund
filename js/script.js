@@ -7,6 +7,10 @@ document.getElementById("calculate-btn").addEventListener('click', function () {
     let totalExpenses = food + rent + cloth;
 
     console.log(totalExpenses);
+    let balance = income - totalExpenses
+
+    document.getElementById("total-expences").innerText = totalExpenses;
+    document.getElementById("balance").innerText = balance;
 
 
 })
